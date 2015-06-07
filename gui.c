@@ -793,6 +793,17 @@ static void init(void) {
 	add_character(conv->root, "：", ":", 1, 0);
 	add_character(conv->root, "！", "!", 1, 0);
 	add_character(conv->root, "？", "?", 1, 0);
+	add_character(conv->root, "？", "?", 1, 0);
+	add_character(conv->root, "0", "0", 1, 0);
+	add_character(conv->root, "1", "1", 1, 0);
+	add_character(conv->root, "2", "2", 1, 0);
+	add_character(conv->root, "3", "3", 1, 0);
+	add_character(conv->root, "4", "4", 1, 0);
+	add_character(conv->root, "5", "5", 1, 0);
+	add_character(conv->root, "6", "6", 1, 0);
+	add_character(conv->root, "7", "7", 1, 0);
+	add_character(conv->root, "8", "8", 1, 0);
+	add_character(conv->root, "9", "9", 1, 0);
 }
 
 static size_t print_kana_found(int col) {
