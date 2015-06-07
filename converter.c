@@ -16,15 +16,23 @@ void free_converter(converter conv) {
 		free(conv);
 }
 
-char *feed_converter(converter conv, char c) {
-	char *value = conv->location->value;
+// 1 = feeded character advanced converter
+// 2 = more options
+unsigned char feed_converter(converter conv, char c) {
 	conv_tree next = find_subnode(conv->location, c);
 	if (next) {
 		conv->location = next;
-	} else {
-		conv->location = conv->root;
+		if (conv->location->subnodes_len) {
+			return 3;
+		} else {
+			return 1;
+		}
 	}
-	return value;
+	if (conv->location->subnodes_len) {
+		return 2;
+	} else {
+		return 0;
+	}
 }
 unsigned char is_converter_reset(converter conv) {
 	return conv->location == conv->root;
