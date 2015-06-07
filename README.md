@@ -5,6 +5,8 @@ Now simply start typing with roman letters, and it will be converted into kana w
 
 Katakana is uppercase, hiragana is lowercase. Various japanese punctuation is also supported. Open the `gui.c` file and look in the init function to see possible completions.
 
+Note that compilation is automatically done by the run script when needed.
+
 ## Required software
  * gcc
  * xclip
