@@ -5,7 +5,7 @@ Now simply start typing with roman letters, and it will be converted into kana w
 
 Katakana is uppercase, hiragana is lowercase. Various japanese punctuation is also supported. Open the `gui.c` file and look in the init function to see possible completions.
 
-Note that compilation is automatically done by the run script when needed.
+If you want the result saved in a file instead of into the clipboard, run `make` to compile and use the `./rtok` executable with the filename as argument.
 
 ## Required software
  * gcc
