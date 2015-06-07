@@ -344,6 +344,7 @@ static void init(void) {
 	add_character(conv->root, "ヲ", "wO", 2, 0);
 	add_character(conv->root, "ヲ", "WO", 2, 0);
 	add_character(conv->root, "ン", "N", 1, 0);
+	add_character(conv->root, "ン", "M", 1, 0);
 	add_character(conv->root, "ッ", "''", 2, 0);
 	add_character(conv->root, "ガ", "Ga", 2, 0);
 	add_character(conv->root, "ガ", "gA", 2, 0);
