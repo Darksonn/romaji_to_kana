@@ -1,3 +1,5 @@
+./rtok
+
 # Object files
 *.o
 *.ko

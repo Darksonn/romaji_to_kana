@@ -1,0 +1,9 @@
+#!/bin/bash
+make > /dev/null
+./rtok ./.kana_tmp
+xclip -selection clipboard < ./.kana_tmp
+xclip < ./.kana_tmp
+cat ./.kana_tmp
+echo ""
+rm -f ./.kana_tmp
+
