@@ -1,9 +1,10 @@
 #!/bin/bash
+cd "$(dirname "$0")"
 make > /dev/null
-./rtok ./.kana_tmp
-xclip -selection clipboard < ./.kana_tmp
-xclip < ./.kana_tmp
-cat ./.kana_tmp
+./rtok /tmp/.kana_tmp
+xclip -selection clipboard < /tmp/.kana_tmp &
+xclip < /tmp/.kana_tmp &
+cat /tmp/.kana_tmp
 echo ""
-rm -f ./.kana_tmp
+rm -f /tmp/.kana_tmp
 
